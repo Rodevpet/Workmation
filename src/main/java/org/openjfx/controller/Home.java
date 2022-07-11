@@ -10,8 +10,9 @@ import java.util.ResourceBundle;
 
 public class Home implements Initializable {
     @FXML
-    private TabPane TabPane_Plugin;
+    TabPane Tab_Pane;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
 }
