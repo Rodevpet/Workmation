@@ -1,17 +1,21 @@
 package org.openjfx;
 
+import com.mashape.unirest.http.exceptions.UnirestException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.openjfx.model.Crypt;
 
 import java.io.IOException;
 
 public class MainApp extends Application {
     private static Stage stage;
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnirestException, IOException {
+        new Crypt().init();
         launch(args);
+
     }
 
     @Override
