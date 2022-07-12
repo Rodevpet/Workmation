@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Workmation" target="11" />
+      <module name="Workmation" target="18" />
     </bytecodeTargetLevel>
   </component>
 </project>
