@@ -6,14 +6,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.openjfx.model.Crypt;
+import org.openjfx.controller.Connect_Notion_Button;
+import org.openjfx.model.Loading_Properties;
 
 import java.io.IOException;
 
 public class MainApp extends Application {
-    private static Stage stage;
+    public static Stage stage;
     public static void main(String[] args) throws UnirestException, IOException {
-        new Crypt().init();
         launch(args);
 
     }

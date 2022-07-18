@@ -1,6 +1,7 @@
 module Workmation {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.web;
     requires unirest.java;
     requires org.json;
     opens org.openjfx to javafx.fxml;

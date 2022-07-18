@@ -1,15 +1,12 @@
 package org.openjfx.controller;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TabPane;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import org.openjfx.MainApp;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
@@ -20,16 +17,12 @@ public class Home implements Initializable {
     TabPane Tab_Pane;
 
     @FXML
-    TextField Username_Output;
+    Tab Notion_Tab;
 
-    @FXML
-    PasswordField Password_Output;
-
-    @FXML
-    Button Sync_Button;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
+            Notion_Tab.setContent(FXMLLoader.load(MainApp.class.getClassLoader().getResource("Connect_Button.fxml")));
             log_init();
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -37,13 +30,11 @@ public class Home implements Initializable {
     }
 
     private void log_init () throws IOException {
-        String IdPropsPath = Thread.currentThread().getContextClassLoader().getResource("ID.properties").getPath();
+        String IdPropsPath = Thread.currentThread().getContextClassLoader().getResource("Login.properties").getPath();
 
         Properties IdProps = new Properties();
         IdProps.load(new FileInputStream(IdPropsPath));
 
-        String user = IdProps.getProperty("user");
-        String password = IdProps.getProperty("password");
     }
 
     public void Synchronized (){

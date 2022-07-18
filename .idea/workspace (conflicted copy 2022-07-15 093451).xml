@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="df97aac2-0028-4c59-89fe-2688eeedc342" name="Changes" comment="add connection to crytpo website + get key encryption">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/model/Crypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/model/Crypt.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.8.6" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="Only Main Module" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Bib7CrdksetbuDaZ1O6Ij6zzJ0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/GUI_Structur" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.openjfx.MainApp" />
+      <module name="Workmation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df97aac2-0028-4c59-89fe-2688eeedc342" name="Changes" comment="" />
+      <created>1657391684132</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657391684132</updated>
+      <workItem from="1657391691138" duration="1311000" />
+      <workItem from="1657398557921" duration="655000" />
+      <workItem from="1657399550765" duration="964000" />
+      <workItem from="1657432985147" duration="662000" />
+      <workItem from="1657452202819" duration="1958000" />
+      <workItem from="1657454742421" duration="2316000" />
+      <workItem from="1657485479367" duration="815000" />
+      <workItem from="1657486486626" duration="4832000" />
+      <workItem from="1657553488247" duration="41000" />
+      <workItem from="1657553611181" duration="5278000" />
+      <workItem from="1657608824725" duration="2260000" />
+      <workItem from="1657639827948" duration="6253000" />
+      <workItem from="1657703369100" duration="49000" />
+      <workItem from="1657703431391" duration="103000" />
+      <workItem from="1657777439917" duration="920000" />
+      <workItem from="1657866195064" duration="2237000" />
+    </task>
+    <task id="LOCAL-00001" summary="init maven project">
+      <created>1657393060999</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1657393060999</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init JavaFx">
+      <created>1657400480643</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657400480643</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init JavaFx">
+      <created>1657400494457</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657400494457</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init JavaFx">
+      <created>1657455165726</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657455165726</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add module-info.java">
+      <created>1657456131694</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657456131694</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add module-info.java">
+      <created>1657457469161</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1657457469161</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add controller for home">
+      <created>1657524480523</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657524480523</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add controller for home">
+      <created>1657554208733</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657554208733</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add connection to crytpo website">
+      <created>1657629080347</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657629080347</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add connection to crytpo website + get key encryption">
+      <created>1657645612513</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657645612513</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init maven project" />
+    <MESSAGE value="init JavaFx" />
+    <MESSAGE value="add module-info.java" />
+    <MESSAGE value="add controller for home" />
+    <MESSAGE value="add connection to crytpo website" />
+    <MESSAGE value="add connection to crytpo website + get key encryption" />
+    <option name="LAST_COMMIT_MESSAGE" value="add connection to crytpo website + get key encryption" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
