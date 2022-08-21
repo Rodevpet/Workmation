@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import org.openjfx.MainApp;
+import org.openjfx.model.Log_Init;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -22,19 +23,14 @@ public class Home implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
-            Notion_Tab.setContent(FXMLLoader.load(MainApp.class.getClassLoader().getResource("Connect_Button.fxml")));
-            log_init();
+            boolean Logged = new Log_Init().Logged();
+            if (Logged == true){
+            } else if (Logged == false){
+                Notion_Tab.setContent(FXMLLoader.load(MainApp.class.getClassLoader().getResource("Connect_Button.fxml")));
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    private void log_init () throws IOException {
-        String IdPropsPath = Thread.currentThread().getContextClassLoader().getResource("Login.properties").getPath();
-
-        Properties IdProps = new Properties();
-        IdProps.load(new FileInputStream(IdPropsPath));
-
     }
 
     public void Synchronized (){

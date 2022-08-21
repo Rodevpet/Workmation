@@ -1,19 +1,18 @@
 package org.openjfx;
 
-import com.mashape.unirest.http.exceptions.UnirestException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.openjfx.controller.Connect_Notion_Button;
-import org.openjfx.model.Loading_Properties;
+import org.openjfx.model.Token;
 
 import java.io.IOException;
 
 public class MainApp extends Application {
     public static Stage stage;
-    public static void main(String[] args) throws UnirestException, IOException {
+    public static void main(String[] args) throws IOException {
+        new Token();
         launch(args);
 
     }

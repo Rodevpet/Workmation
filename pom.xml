@@ -29,16 +29,13 @@
     <profile>
       <id>Only Main Module</id>
       <dependencies>
+        <!-- Need to read JSon body of a http request response -->
         <dependency>
-          <groupId>org.json</groupId>
-          <artifactId>json</artifactId>
-          <version>20220320</version>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+          <version>2.13.3</version>
         </dependency>
-        <dependency>
-          <groupId>com.mashape.unirest</groupId>
-          <artifactId>unirest-java</artifactId>
-          <version>1.4.9</version>
-        </dependency>
+        <!-- Need for GUI -->
         <dependency>
           <groupId>org.openjfx</groupId>
           <artifactId>javafx-controls</artifactId>
@@ -69,16 +66,6 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-maven-plugin</artifactId>
             <version>0.0.6</version>
-            <executions>
-              <execution>
-                <!-- Default configuration for running -->
-                <!-- Usage: mvn clean javafx:run -->
-                <id>default-cli</id>
-                <configuration>
-                  <mainClass>Workmation/org.openjfx.MainApp</mainClass>
-                </configuration>
-              </execution>
-            </executions>
           </plugin>
         </plugins>
       </build>
