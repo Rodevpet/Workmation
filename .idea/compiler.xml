@@ -7,11 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Notion" />
+        <module name="Workmation" />
         <module name="WebDav" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Workmation" target="18" />
-    </bytecodeTargetLevel>
   </component>
 </project>
