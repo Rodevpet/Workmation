@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.controller.Notion_information">
+   <children>
+      <Circle fill="#00ff4435" layoutX="300.0" layoutY="200.0" radius="39.0" stroke="#ffffff00" strokeType="INSIDE" />
+      <Line endX="155.67105102539062" endY="-6.30126953125" layoutX="171.0" layoutY="180.0" startX="126.917724609375" startY="34.255157470703125" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Line endX="84.5" endY="57.0" layoutX="213.0" layoutY="158.0" startX="68.5" startY="46.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Label layoutX="269.0" layoutY="238.0" text="Connected" textFill="#0000007a" />
+      <GridPane alignment="CENTER" layoutX="4.0" layoutY="13.0" prefHeight="120.0" prefWidth="273.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="134.38693237304688" minWidth="10.0" prefWidth="100.11306762695312" />
+          <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="136.1772232055664" minWidth="10.0" prefWidth="130.88693237304688" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Workspace Name :" />
+            <Label text="bot id :" GridPane.rowIndex="1" />
+            <Label text="owner :" GridPane.rowIndex="2" />
+            <Label text="Token :" GridPane.rowIndex="3" />
+            <TextField fx:id="Workspace_Name_Entry" prefHeight="26.0" prefWidth="131.0" GridPane.columnIndex="1" />
+            <TextField fx:id="Bot_Id_Entry" prefHeight="26.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="Owner_Entry" prefHeight="26.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="Token_Entry" prefHeight="26.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</Pane>
