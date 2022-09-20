@@ -5,12 +5,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.openjfx.model.Loading_Properties;
 
 import java.io.IOException;
 
 public class MainApp extends Application {
     public static Stage stage;
     public static void main(String[] args) throws IOException {
+        Loading_Properties.Loading_Properties();
         launch(args);
 
     }

@@ -1,5 +1,4 @@
 org/openjfx/model/Connection/Loading_Information.class
-org/openjfx/model/Request/JSon_Read.class
 org/openjfx/MainApp.class
 org/openjfx/model/Request/NotionRequest.class
 org/openjfx/model/Connection/Token.class
@@ -11,4 +10,3 @@ org/openjfx/model/Loading_Properties.class
 module-info.class
 org/openjfx/model/Connection/Log_Init.class
 org/openjfx/model/Request/NotionRequest$NotionRequestBuilder.class
-org/openjfx/model/Request/APOD.class

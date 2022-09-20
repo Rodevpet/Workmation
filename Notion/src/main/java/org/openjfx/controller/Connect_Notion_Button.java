@@ -22,8 +22,8 @@ public class Connect_Notion_Button {
     public Connect_Notion_Button() throws IOException {
     }
 
-    public void Connect_Button_Clicked() throws IOException, URISyntaxException {
-        URL urle = new URL("https://api.notion.com/v1/oauth/authorize?owner="+Loading_Properties.get_Owner()+"&client_id="+Loading_Properties.get_Client_Id()+"&redirect_uri="+Loading_Properties.get_Redirect_Uri()+"&response_type="+ Loading_Information.get_Response_Type());
+    public void Connect_Button_Clicked() throws IOException, URISyntaxException, InterruptedException {
+        URL urle = new URL("https://api.notion.com/v1/oauth/authorize?owner="+Loading_Properties.getOwner()+"&client_id="+Loading_Properties.getClientId()+"&redirect_uri="+Loading_Properties.getRedirectUri()+"&response_type="+ Loading_Information.getResponseType());
         if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
             Desktop.getDesktop().browse(new URI(urle.toString()));
         }

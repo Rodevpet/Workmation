@@ -10,7 +10,7 @@ public class Log_Init {
     }
 
     public boolean Logged () throws IOException {
-        if (Loading_Properties.get_Token().equals("")){
+        if (Loading_Properties.getToken().equals("")){
             return false;
         }else {
             return true;

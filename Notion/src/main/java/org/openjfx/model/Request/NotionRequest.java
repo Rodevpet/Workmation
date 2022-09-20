@@ -1,53 +1,52 @@
 package org.openjfx.model.Request;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import okhttp3.*;
 import org.openjfx.model.Loading_Properties;
 
 import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
 import java.util.HashMap;
 
 public class NotionRequest {
-    HttpClient client = HttpClient.newHttpClient();
-    public NotionRequest(HttpRequest request) throws IOException, InterruptedException {
-        var response = client.send(request, new JSon_Read<>(APOD.class));
-        System.out.println(response.body().get().title);
+    public String NotionRequest(Request request) throws IOException, InterruptedException {
+        OkHttpClient client = new OkHttpClient().newBuilder().build();
+        Response response = client.newCall(request).execute();
+        return(response.body().string());
     }
 
     public static class NotionRequestBuilder extends Loading_Properties{
-        HttpRequest.BodyPublisher bodyPublisher;
-        HttpRequest.Builder request;
+        Request.Builder request = new Request.Builder();
+        RequestBody requestBody;
         public NotionRequestBuilder(String url, HashMap<String,String> header) throws IOException {
-             request = HttpRequest.newBuilder(
-                            URI.create("https://api.notion.com/v1/"+url))
-                    .header("Content-Type", "application/json");
+             request.url("https://api.notion.com/v1/"+url);
+             request.header("Content-Type", "application/json");
              if (header != null){
                  for (String i : header.keySet()) {
                      request.header(i, header.get(i));
              }
             }
         }
-        public NotionRequestBuilder body(String encoded, HashMap<String,String> body) throws JsonProcessingException {
-            bodyPublisher = HttpRequest.BodyPublishers.ofString(new ObjectMapper().writeValueAsString(body));
+        public NotionRequestBuilder body(HashMap<String,String> body) {
+            FormBody.Builder formBody = new FormBody.Builder();
+            for (String key:body.keySet()){
+                formBody.add(key,body.get(key));
+            }
+            requestBody = formBody.build();
             return this;
         }
         public NotionRequestBuilder GET (){
-            request.method("GET", bodyPublisher);
+            request.method("GET", requestBody);
             return this;
         }
         public NotionRequestBuilder POST (){
-            request.POST(bodyPublisher);
+            request.method("POST",requestBody);
             return this;
         }
         public NotionRequestBuilder PATCH (){
-            request.method("PATCH", bodyPublisher);
+            request.method("PATCH", requestBody);
             return this;
         }
         public NotionRequestBuilder DELETE (){
-            request.method("DELETE", bodyPublisher);
+            request.method("DELETE", requestBody);
             return this;
         }
 
@@ -56,10 +55,10 @@ public class NotionRequest {
             return this;
         }
         public NotionRequestBuilder AUTH_BEARER () {
-            request.header("Authorization", "Bearer " + Loading_Properties.get_Token());
+            request.header("Authorization", "Bearer " + Loading_Properties.getToken());
             return this;
         }
-        public HttpRequest build (){
+        public Request build (){
             return request.build();
         }
     }
