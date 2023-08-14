@@ -27,8 +27,9 @@ public class Connect_Notion_Button {
         if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
             Desktop.getDesktop().browse(new URI(urle.toString()));
         }
-        new Token();
 
     }
+
+
 
 }

@@ -1,6 +1,8 @@
 package org.openjfx.model;
 
 import java.io.*;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
 import java.util.Properties;
 
 public class Loading_Properties {
@@ -18,10 +20,9 @@ public class Loading_Properties {
 
     protected static String encoding;
     private static String Path_Login_Properties = Thread.currentThread().getContextClassLoader().getResource("Login.properties").getPath();
-    private static String Path_Workspace_Info_Properties = Thread.currentThread().getContextClassLoader().getResource("WorkspaceInfo.properties").getPath();
+
     public static void  Loading_Properties () throws IOException {
         Loading_Login_Properties();
-        Loading_Workspace_Information_Properties();
     }
 
     public static void Loading_Login_Properties ()throws IOException{
@@ -34,16 +35,6 @@ public class Loading_Properties {
         redirect_uri = appProps.getProperty("redirect_uri");
         configured = appProps.getProperty("configured").equals("true");
         encoding = appProps.getProperty("encoding");
-    }
-
-    public static void Loading_Workspace_Information_Properties () throws IOException{
-        Properties appProps = new Properties();
-        appProps.load(new FileInputStream(Path_Workspace_Info_Properties));
-        workspace_name = appProps.getProperty("workspace_name");
-        workspace_id = appProps.getProperty("workspace_id");
-        workspace_icon = appProps.getProperty("workspace_icon");
-        owner_user = appProps.getProperty("owner_user");
-        bot_id = appProps.getProperty("bot_id");
     }
 
     public static String get_Workspace_Name() {
@@ -93,15 +84,22 @@ public class Loading_Properties {
     public static String getEncoding() {
         return encoding;
     }
-    public static void setToken(String token) throws IOException {
+    public static void setToken(String token) {
         Loading_Properties.token = token;
-        Properties appProps = new Properties();
-        appProps.setProperty("token", token);
-        FileOutputStream e =new FileOutputStream(Path_Login_Properties);
-        appProps.store(e,null);
-        e.close();
+
     }
 
+    public static void setWorkspace_name(String workspace_name) {
+        Loading_Properties.workspace_name = workspace_name;
+    }
+
+    public static void setBot_id(String bot_id){
+        Loading_Properties.bot_id = bot_id;
+    }
+
+    public static void setOwner(String owner){
+        Loading_Properties.owner = owner;
+    }
     public static void setClient_id(String client_id) throws IOException {
         Loading_Properties.client_id = client_id;
         Properties appProps = new Properties();

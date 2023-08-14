@@ -3,7 +3,6 @@ module Notion {
     requires javafx.fxml;
     requires java.desktop;
     requires okhttp3;
-    requires org.json;
 
     opens org.openjfx.model.Request to org.json;
     opens org.openjfx.model to okhttp3;

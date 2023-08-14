@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<d:multistatus xmlns:d="DAV:" xmlns:s="http://sabredav.org/ns" xmlns:card="urn:ietf:params:xml:ns:carddav" xmlns:cal="urn:ietf:params:xml:ns:caldav" xmlns:cs="http://calendarserver.org/ns/">
+    <d:response>
+        <d:href>/calendars/RP01401/</d:href>
+        <d:propstat>
+            <d:prop>
+                <d:displayname/>
+                <cs:getctag/>
+            </d:prop>
+            <d:status>HTTP/1.1 404 Not Found</d:status>
+        </d:propstat>
+    </d:response>
+    <d:response>
+        <d:href>/calendars/RP01401/97478551-3bab-4c2d-9ae4-53d709f6aba4/</d:href>
+        <d:propstat>
+            <d:prop>
+                <d:displayname>RDV</d:displayname>
+                <cs:getctag>http://sabre.io/ns/sync/460</cs:getctag>
+            </d:prop>
+            <d:status>HTTP/1.1 200 OK</d:status>
+        </d:propstat>
+    </d:response>
+    <d:response>
+        <d:href>/calendars/RP01401/ce94af84-a8e8-4a63-8be1-7a3c43e6bbd9/</d:href>
+        <d:propstat>
+            <d:prop>
+                <d:displayname>Activitées</d:displayname>
+                <cs:getctag>http://sabre.io/ns/sync/180</cs:getctag>
+            </d:prop>
+            <d:status>HTTP/1.1 200 OK</d:status>
+        </d:propstat>
+    </d:response>
+    <d:response>
+        <d:href>/calendars/RP01401/69951359-925e-413c-854f-8552bb6117df/</d:href>
+        <d:propstat>
+            <d:prop>
+                <d:displayname>Vacances</d:displayname>
+                <cs:getctag>http://sabre.io/ns/sync/126</cs:getctag>
+            </d:prop>
+            <d:status>HTTP/1.1 200 OK</d:status>
+        </d:propstat>
+    </d:response>
+    <d:response>
+        <d:href>/calendars/RP01401/1c9d4962-39be-4e61-8285-8b8d1a886741/</d:href>
+        <d:propstat>
+            <d:prop>
+                <d:displayname>Musculation</d:displayname>
+                <cs:getctag>http://sabre.io/ns/sync/96</cs:getctag>
+            </d:prop>
+            <d:status>HTTP/1.1 200 OK</d:status>
+        </d:propstat>
+    </d:response>
+    <d:response>
+        <d:href>/calendars/RP01401/9b84b307-6195-4ce2-807c-491af778a810/</d:href>
+        <d:propstat>
+            <d:prop>
+                <d:displayname>Programmation</d:displayname>
+                <cs:getctag>http://sabre.io/ns/sync/65</cs:getctag>
+            </d:prop>
+            <d:status>HTTP/1.1 200 OK</d:status>
+        </d:propstat>
+    </d:response>
+    <d:response>
+        <d:href>/calendars/RP01401/11a0222e-83a4-41bf-a4de-74b0ab857888/</d:href>
+        <d:propstat>
+            <d:prop>
+                <d:displayname>Révision</d:displayname>
+                <cs:getctag>http://sabre.io/ns/sync/1018</cs:getctag>
+            </d:prop>
+            <d:status>HTTP/1.1 200 OK</d:status>
+        </d:propstat>
+    </d:response>
+    <d:response>
+        <d:href>/calendars/RP01401/f45c2f92-9ca7-416b-b41b-3d9df8fe68fb/</d:href>
+        <d:propstat>
+            <d:prop>
+                <d:displayname>Lecture</d:displayname>
+                <cs:getctag>http://sabre.io/ns/sync/74</cs:getctag>
+            </d:prop>
+            <d:status>HTTP/1.1 200 OK</d:status>
+        </d:propstat>
+    </d:response>
+    <d:response>
+        <d:href>/calendars/RP01401/f9f348f0-831d-4acc-932e-a29b7f1fbf56/</d:href>
+        <d:propstat>
+            <d:prop>
+                <d:displayname>Vie Sociale</d:displayname>
+                <cs:getctag>http://sabre.io/ns/sync/52</cs:getctag>
+            </d:prop>
+            <d:status>HTTP/1.1 200 OK</d:status>
+        </d:propstat>
+    </d:response>
+    <d:response>
+        <d:href>/calendars/RP01401/4d6935e0-72e3-46d8-b02e-3da9af8dcaba/</d:href>
+        <d:propstat>
+            <d:prop>
+                <d:displayname>Routing morning</d:displayname>
+                <cs:getctag>http://sabre.io/ns/sync/75</cs:getctag>
+            </d:prop>
+            <d:status>HTTP/1.1 200 OK</d:status>
+        </d:propstat>
+    </d:response>
+    <d:response>
+        <d:href>/calendars/RP01401/129B5AFA-B3C2-497A-91FC-D16CF1AD96AB/</d:href>
+        <d:propstat>
+            <d:prop>
+                <d:displayname>Course</d:displayname>
+                <cs:getctag>http://sabre.io/ns/sync/263</cs:getctag>
+            </d:prop>
+            <d:status>HTTP/1.1 200 OK</d:status>
+        </d:propstat>
+    </d:response>
+    <d:response>
+        <d:href>/calendars/RP01401/inbox/</d:href>
+        <d:propstat>
+            <d:prop>
+                <d:displayname/>
+                <cs:getctag/>
+            </d:prop>
+            <d:status>HTTP/1.1 404 Not Found</d:status>
+        </d:propstat>
+    </d:response>
+    <d:response>
+        <d:href>/calendars/RP01401/outbox/</d:href>
+        <d:propstat>
+            <d:prop>
+                <d:displayname/>
+                <cs:getctag/>
+            </d:prop>
+            <d:status>HTTP/1.1 404 Not Found</d:status>
+        </d:propstat>
+    </d:response>
+</d:multistatus>
